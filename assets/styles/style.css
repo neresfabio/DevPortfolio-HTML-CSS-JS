@@ -1,9 +1,22 @@
 body{
     background-color: var(--bg-black);
 }
+header{
+    padding: 16px 0;
+}
+.divider{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 16px 0;
+}
 h1{
     color: var(--white-color);
 }
 footer{
     color: var(--white-color);
+}
+
+li{
+    margin-right: 10px;
 }
