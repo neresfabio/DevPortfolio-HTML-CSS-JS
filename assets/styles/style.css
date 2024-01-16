@@ -1,0 +1,9 @@
+body{
+    background-color: var(--bg-black);
+}
+h1{
+    color: var(--white-color);
+}
+footer{
+    color: var(--white-color);
+}
