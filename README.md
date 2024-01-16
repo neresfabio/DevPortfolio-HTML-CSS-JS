@@ -1,27 +1,25 @@
-# My Portifólio
+# Portifólio Web
 
 ## Estágios
 
-1. Com figuração de Ambiente de Desenvolvimento:
+1. Estrutura HTML:
 
-2. Estrutura HTML:
+2. Topo da Página:
 
-3. Topo da Página:
+3. Menu de Navegação:
 
-4. Menu de Navegação:
+4. Conteúdo da Main:
 
-5. Conteúdo da Main:
+5. Estilização do CSS:
 
-6. Estilização do CSS:
+6. Responsividade:
 
-7. Responsividade:
+7. Testes:
 
-8. Testes:
+8. Integração de recursos:
 
-9. Integração de recursos:
+9. Otimização de Desempenho:
 
-10. Otimização de Desempenho:
+10. SEO (Otimização para Motores de Busca):
 
-11. SEO (Otimização para Motores de Busca):
-
-12. Documentação:
+11. Documentação:
