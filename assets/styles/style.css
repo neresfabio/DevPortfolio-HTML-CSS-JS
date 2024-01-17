@@ -3,12 +3,47 @@ body{
 }
 header{
     padding: 16px 0;
+    margin-bottom: 24px;
 }
 .divider{
     height: 2px;
     width: 100%;
     background-color: #fff;
     margin: 16px 0;
+}
+section{
+    display: flex;
+}
+nav{
+    width: 230px;
+    margin-right: 16px;
+}
+nav li{
+    padding: 16px;
+    margin: 0;
+}
+nav .active{
+    background-color: #E63136;
+}
+nav .active a{
+    color: #fff;
+}
+nav a{
+    color: var(--semi-red-color);
+    text-decoration: none;
+    padding: 16px;
+    font-size: 32px;
+    font-weight: lighter;
+}
+.full-height{
+    height: calc(100vh - (20px + 10px));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+article{
+    height: calc(100vh - (20px + 10px));
 }
 h1{
     color: var(--white-color);
