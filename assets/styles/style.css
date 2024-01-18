@@ -7,6 +7,18 @@
 li {
   margin-right: 10px;
 }
+button{
+  border: none;
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+button:hover{
+  background-color: #18d107;
+}
 .divider {
   height: 2px;
   width: 100%;
@@ -41,6 +53,10 @@ nav a {
   font-size: 24px;
   font-weight: lighter;
 }
+main{
+  display: flex;
+  justify-content: space-between;
+}
 .main-content {
   min-height: 100vh;
 }
@@ -49,7 +65,7 @@ p {
   color: var(--white-color);
 }
 .title {
-  font-size: 30px;
+  font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -64,6 +80,9 @@ p {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2rem;
 }
+main .sub-title{
+  font-size: 3.5rem;
+}
 main p {
   font-family: "Poppins";
   font-weight: 400;
@@ -73,8 +92,15 @@ main p {
   color: var(--primary-color);
   width: 100%;
 }
+.item-menu:hover{
+  background-color: #3502025b;
+}
+
 footer {
   color: var(--white-color);
   margin-top: 24px;
   text-align: center;
+}
+footer span{
+  color: var(--primary-color);
 }
