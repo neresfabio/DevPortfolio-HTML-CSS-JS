@@ -1,57 +1,80 @@
-body{
-    background-color: var(--bg-black);
+.group-social {
+  padding: 8px 0;
 }
-header{
-    padding: 16px 0;
-    margin-bottom: 24px;
+.icon-social {
+  width: 22px;
 }
-.divider{
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    margin: 16px 0;
+li {
+  margin-right: 10px;
 }
-section{
-    display: flex;
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--white-color);
+  margin-bottom: 24px;
 }
-nav{
-    width: 230px;
-    margin-right: 16px;
+.logo {
+  margin-bottom: 24px;
 }
-nav li{
-    padding: 16px;
-    margin: 0;
+section {
+  display: flex;
+  justify-content: space-between;
 }
-nav .active{
-    background-color: #E63136;
+nav {
+  width: 230px;
+  margin-right: 16px;
 }
-nav .active a{
-    color: #fff;
+nav li {
+  padding: 16px;
+  margin: 0;
 }
-nav a{
-    color: var(--semi-red-color);
-    text-decoration: none;
-    padding: 16px;
-    font-size: 32px;
-    font-weight: lighter;
+nav .active {
+  background-color: var(--primary-color);
 }
-.full-height{
-    height: calc(100vh - (20px + 10px));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: hidden;
+nav .active a {
+  color: var(--white-color);
 }
-article{
-    height: calc(100vh - (20px + 10px));
+nav a {
+  color: var(--second-color);
+  text-decoration: none;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: lighter;
 }
-h1{
-    color: var(--white-color);
+.main-content {
+  min-height: 100vh;
 }
-footer{
-    color: var(--white-color);
+h1,
+p {
+  color: var(--white-color);
 }
-
-li{
-    margin-right: 10px;
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.title span {
+  color: var(--primary-color);
+}
+.sub-title {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 6rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+main p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+  width: 100%;
+}
+footer {
+  color: var(--white-color);
+  margin-top: 24px;
+  text-align: center;
 }

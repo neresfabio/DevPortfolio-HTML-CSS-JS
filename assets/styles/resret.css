@@ -22,7 +22,7 @@ button {
 }
 
 body {
-  background-color: var(--black-color);
+  background-color: var(--bg-black);
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
 }
