@@ -1,5 +1,5 @@
-# Portifólio Web
-
+# DevPortfolio-HTML-CSS-JS
+Bem-vindo ao DevPortfolio, um repositório que encapsula meu processo de desenvolvimento web ao criar a página inicial de um portfólio para um desenvolvedor front-end. Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript, e tem como objetivo servir tanto como uma apresentação para recrutadores quanto como um guia/tutorial para entusiastas que desejam aprender e se inspirar.
 ## Estágios
 
 1. Estrutura HTML:
