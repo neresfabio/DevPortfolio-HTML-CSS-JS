@@ -1,10 +1,11 @@
+/* HEADER */
 .group-social {
   padding: 8px 0;
 }
 .icon-social {
   width: 22px;
 }
-li {
+.items-flexc li {
   margin-right: 10px;
 }
 button{
@@ -28,30 +29,29 @@ button:hover{
 .logo {
   margin-bottom: 24px;
 }
+/* SECTION */
 section {
   display: flex;
   justify-content: space-between;
 }
-nav {
-  width: 230px;
-  margin-right: 16px;
+/* MENU LATERAL */
+.content-left{
+  width: 10vw;
 }
-nav li {
-  padding: 16px;
-  margin: 0;
-}
-nav .active {
-  background-color: var(--primary-color);
-}
-nav .active a {
-  color: var(--white-color);
-}
-nav a {
+.menu li{
+  padding: 1.5rem;
   color: var(--second-color);
-  text-decoration: none;
-  padding: 16px;
-  font-size: 24px;
-  font-weight: lighter;
+}
+.menu li .item-menu{
+  font-size: 2rem;font-weight: 700;
+  color: inherit;
+  cursor: default;
+  pointer-events: none;
+}
+.menu li:hover{
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: rgba(153, 5, 5, 0.336);
 }
 main{
   display: flex;
@@ -97,6 +97,7 @@ main p {
 }
 
 footer {
+  width: 100%;
   color: var(--white-color);
   margin-top: 24px;
   text-align: center;
