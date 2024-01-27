@@ -492,13 +492,13 @@ Conjunto de regras globais que são aplicadas a todos os elementos (\*) e a elem
     <div class="group-social flex-center-right">
       <ul class="flex-items-center">
         <li>
-          <a href="https://www.youtube.com/@neres_" target="_blank">
+          <a href="https://#" target="_blank">
             <img class="icon-social" src="./assets/images/youtub.svg" alt="" />
           </a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/fabioneresdejesus/"
+            href="https://#"
             target="_blank"
           >
             <img
@@ -509,7 +509,7 @@ Conjunto de regras globais que são aplicadas a todos os elementos (\*) e a elem
           </a>
         </li>
         <li>
-          <a href="https://github.com/neresfabio" target="_blank">
+          <a href="https://#" target="_blank">
             <img class="icon-social" src="./assets/images/github.svg" alt="" />
           </a>
         </li>
@@ -558,3 +558,68 @@ button:hover {
   margin-bottom: 24px;
 }
 ```
+
+### Div, Nav, Main
+
+```html
+<div class="container flex-space-between">
+  <nav class="menu-left">
+    <!--lista de navegação-->
+    <ul class="menu">
+      <li class="active" onclick="changeActive(this)">
+        <a class="item-menu" href="#">Início</a>
+      </li>
+      <li class="" onclick="changeActive(this)">
+        <a class="item-menu" href="#">Projetos</a>
+      </li>
+      <li class="" onclick="changeActive(this)">
+        <a class="item-menu" href="#">Sobre</a>
+      </li>
+      <li class="" onclick="changeActive(this)">
+        <a class="item-menu" href="#">Serviços</a>
+      </li>
+      <li class="" onclick="changeActive(this)">
+        <a class="item-menu" href="#">Blog</a>
+      </li>
+      <li class="" onclick="changeActive(this)">
+        <a class="item-menu" href="#">Videos</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="left-content">
+      <h1 class="title">Olá! 👋🏻 Eu sou <br /><span>Fábio Neres</span></h1>
+      <h2 class="sub-title">Developer Analyst</h2>
+      <p>
+        Tenho como responsabilidade realizar sonhos, transformando seu projeto
+        em uma obra de arte.
+      </p>
+      <button class="btn-cv" type="button">Baixar Currículo</button>
+    </div>
+    <div class="right-content">
+      <img class="persona" src="./assets/images/persona.svg" alt="" />
+    </div>
+  </main>
+</div>
+```
+
+### Footer
+
+```html
+<footer>
+  <!--informações-->
+  <span>© 2024</span> por Fábio Neres
+</footer>
+```
+Se chegou até aqui, esse é o possivel resultado, não me aprofundei em detalhar linha a linha do codigo, por falta de tempo, como falei anteriormente esse é meu projeto pessoal e para não me prender nesse repositório finalizo por aqui.
+
+![Resultado](./prints/final.png)
+
+> Com isso ja é possivel inicar seu projeto. Seja criativo e modifique a seu gosto.
+
+## Próximos passos
+
+- [ ] Criar as proximas sessões
+- [ ] Adicionar Fortmulário
+
+![gif](./prints/demo.gif)
