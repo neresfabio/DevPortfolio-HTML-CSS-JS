@@ -250,6 +250,231 @@ Essa identificação detalhada dos elementos-chave será útil ao criar a estrut
   © 2024 por Fábio Neres
 </footer>
 ```
+
 Com isso temos nossa primeira versão para iniciar.
 
 ![Estrurura básica](./prints/basic.png)
+
+## Estilização do CSS:
+
+- [x] Crie um arquivo CSS para estilizar a página.
+- [x] Estilize o layout para garantir que os elementos estejam posicionados conforme o design no Figma.
+- [x] Adicione estilos aos links, botões e outras partes da página conforme necessário.
+
+Aqui optei por adicionar um arquivo de padronização do site `pattern.css`, nele colocarei os estilos que se reptirão durante o desenvolvimento, por tanto, sempre que um estilo se repertir em todo o projeto atribuirei um nome especico para reutiliza-lo.
+
+Utilizar um arquivo separado para padronização dos estilos, como o `./styles/pattern.css`, é uma prática recomendada que promove a reutilização e a manutenção do código CSS de forma eficiente. Isso facilita a consistência visual em todo o projeto e simplifica a implementação de alterações globais nos estilos.
+
+```css
+/* Estilos para o cabeçalho */
+.header {
+  /* Estilos para o cabeçalho */
+}
+
+.logo {
+  /* Estilos para a logo */
+}
+
+.social-icons {
+  /* Estilos para os ícones de rede social */
+}
+
+/* Estilos para o rodapé */
+.footer {
+  /* Estilos para o rodapé */
+}
+
+.copyrit {
+  /* Estilos para o aviso de copyright */
+}
+
+/* Estilos para botões */
+.btn {
+  /* Estilos básicos para botões */
+}
+
+.btn-primary {
+  /* Estilos para botão primário */
+}
+
+.btn-secondary {
+  /* Estilos para botão secundário */
+}
+
+/* Outros estilos padronizados... */
+```
+
+Outro tipo de arquivo que adicionei é o de `reset.css`. Incluir um arquivo de reset.css é uma prática comum e útil no desenvolvimento web. Esse tipo de arquivo ajuda a garantir que todos os navegadores comecem com estilos de CSS consistentes, removendo as diferenças padrão entre eles. Isso é especialmente importante para evitar inconsistências de estilo e garantir uma base sólida para a estilização personalizada do seu site.
+
+Aqui estão algumas dicas para usar e organizar seu arquivo reset.css:
+
+Reset vs Normalize:
+
+Existem duas abordagens principais para normalizar estilos entre navegadores: reset e normalize. Um arquivo de reset remove todos os estilos padrão dos navegadores, enquanto um arquivo de normalize mantém alguns estilos padrão e ajusta outros para garantir uma experiência mais consistente. Escolha a abordagem que melhor atenda às necessidades do seu projeto.
+Ordem de Importação:
+
+Importe o arquivo reset.css antes de quaisquer outros arquivos de estilo no seu documento HTML para garantir que os estilos sejam aplicados corretamente e não sejam substituídos por estilos padrão do navegador.
+Personalização:
+
+Após aplicar o reset, você pode adicionar estilos personalizados para criar a aparência desejada do seu site. Certifique-se de adicionar esses estilos após o reset.css para evitar que sejam substituídos.
+Comentários Descritivos:
+
+Adicione comentários descritivos no arquivo reset.css para explicar o propósito de diferentes seções de reset. Isso ajudará você e outros desenvolvedores a entenderem o motivo por trás das alterações nos estilos padrão.
+Versionamento e Atualizações:
+
+Mantenha o arquivo reset.css versionado e documente quaisquer alterações significativas. Isso ajudará a rastrear as mudanças e garantir consistência ao longo do tempo.
+
+Aqui está um exemplo básico de como um arquivo reset.css pode ser estruturado:
+
+```css
+/* Reset de estilos para elementos HTML comuns */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* Outras regras de reset de estilos... */
+```
+
+### `pattern.css`
+
+- [x] `root`: Em contextos relacionados ao desenvolvimento web e CSS, o termo "root" geralmente se refere ao pseudo-elemento :root. Esse pseudo-elemento representa o elemento raiz do documento, que é o elemento HTML (<html>). O :root é frequentemente usado para definir variáveis CSS globais, também conhecidas como variáveis personalizadas, que podem ser acessadas e reutilizadas em todo o documento CSS. Isso permite uma maneira eficiente de manter consistência visual e simplificar a aplicação de estilos em vários elementos.
+
+```css
+:root {
+  --primary-color: #e63136; /*Define uma variavel --primary-color*/
+  --second-color: #55393a; /* Define uma variável --second-color */
+  --font-primary-color: #ffffff; /* Define uma variável --white-color */
+  --bg-page: #1c1c1c;
+}
+/* Container padrão */
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+/* Fonte padrão do h2 */
+h2 {
+  color: var(--white-color);
+}
+/*Este seletor aplica um estilo que utiliza Flexbox para alinhar os itens ao centro verticalmente e justificar o conteúdo à direita. */
+.flex-center-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* Este seletor aplica um estilo que utiliza Flexbox para alinhar os itens ao centro verticalmente. */
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+```
+
+### `reset.css`
+
+Conjunto de regras globais que são aplicadas a todos os elementos (\*) e a elementos específicos como `html`, `img`, `button` e `body`.
+
+**Regra**:
+
+1. \*: Define estilos para todos os elementos HTML.
+
+- `margin: 0;` `padding: 0;`: Remove margens e preenchimentos padrão dos elementos.
+- `box-sizing: border-box;`: Define a caixa de modelagem como border-box para garantir que a largura e a altura incluam o preenchimento e a borda, mas não a margem.
+- `list-style: none;`: Remove estilos de lista padrão (como pontos/bolinhas) de listas.
+- `text-decoration: none;`: Remove decoração de texto padrão (como sublinhado) de links.
+- `font-family: "Poppins", sans-serif;`: Define a família de fontes padrão para todos os elementos como "Poppins" e, se não estiver disponível, para uma fonte sans-serif genérica.
+
+2. `html`: Define estilos para o elemento HTML.
+
+- `font-size: 62.5%;`: Define o tamanho da fonte base como 62.5% do tamanho padrão (geralmente usado para facilitar a conversão de rem para pixels).
+- `scroll-behavior: smooth;`: Adiciona um comportamento de rolagem suave para a página.
+
+3. `img`: Define estilos para elementos de imagem.
+
+- `max-width: 100%;`: Garante que as imagens não excedam a largura do contêiner pai.
+- `display: block;`: Define as imagens para exibição como bloco.
+
+4. `button`: Define estilos para botões.
+
+- `cursor: pointer;`: Define o cursor como ponteiro para indicar que o elemento é clicável.
+
+5. `body`: Define estilos para o corpo do documento.
+
+- `background-color: var(--bg-black);`: Define a cor de fundo do corpo como a variável CSS `--bg-page`.
+- `font-size: 1.6rem;`: Define o tamanho da fonte como 1.6 rem.
+- `webkit-font-smoothing: antialiased;`: Aplica antialiasing para melhorar a qualidade da exibição de fontes em navegadores WebKit.
+
+> Trabalhei em projetos que não possuiam documentação, e pude aplicar um pouco do meu conhecimento em padronização, sempre me deparava com `tags` que possuiam mais de um estilo, quando não era estilo padrao do html, pegava o estilo de qualquer outro framework que tivesse vinculo com o projeto, por ser monolítico, possuia integração com varias ferramentas, e tentar manipular isso era bastante danoso.
