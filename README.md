@@ -620,6 +620,6 @@ Se chegou até aqui, esse é o possivel resultado, não me aprofundei em detalha
 ## Próximos passos
 
 - [ ] Criar as proximas sessões
-- [ ] Adicionar Fortmulário
+- [ ] Adicionar Formulário
 
 ![gif](./prints/demo.gif)
