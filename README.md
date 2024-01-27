@@ -251,4 +251,5 @@ Essa identificação detalhada dos elementos-chave será útil ao criar a estrut
 </footer>
 ```
 Com isso temos nossa primeira versão para iniciar.
+
 ![Estrurura básica](./prints/basic.png)
