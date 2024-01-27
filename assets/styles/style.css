@@ -5,7 +5,7 @@
 .icon-social {
   width: 22px;
 }
-.items-flexc li {
+.flex-items-center li {
   margin-right: 10px;
 }
 button{
@@ -13,7 +13,7 @@ button{
   padding: 0rem 1rem;
   border-radius: 2rem;
   background-color: var(--primary-color);
-  color: #000;
+  color: var(--font-primary-color);
   font-size: 16px;
   font-weight: 700;
 }
@@ -23,20 +23,16 @@ button:hover{
 .divider {
   height: 2px;
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--bg-white);
   margin-bottom: 24px;
 }
 .logo {
   margin-bottom: 24px;
 }
-/* SECTION */
-section {
-  display: flex;
-  justify-content: space-between;
-}
 /* MENU LATERAL */
-.content-left{
-  width: 10vw;
+.menu-left{
+  width: 500px;
+  margin-right: 24px;
 }
 .menu li{
   padding: 1.5rem;
@@ -50,7 +46,7 @@ section {
 }
 .menu li:hover{
   cursor: pointer;
-  color: var(--white-color);
+  color: var(--font-primary-color);
   background-color: rgba(153, 5, 5, 0.336);
 }
 main{
@@ -62,7 +58,7 @@ main{
 }
 h1,
 p {
-  color: var(--white-color);
+  color: var(--font-primary-color);
 }
 .title {
   font-size: 4.5rem;
@@ -95,11 +91,9 @@ main p {
 .item-menu:hover{
   background-color: #3502025b;
 }
-
 footer {
   width: 100%;
-  color: var(--white-color);
-  margin-top: 24px;
+  color: var(--font-primary-color);
   text-align: center;
 }
 footer span{

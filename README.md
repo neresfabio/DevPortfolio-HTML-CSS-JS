@@ -428,7 +428,7 @@ video {
 }
 /* Fonte padrão do h2 */
 h2 {
-  color: var(--white-color);
+  color: var(--font-primary-color);
 }
 /*Este seletor aplica um estilo que utiliza Flexbox para alinhar os itens ao centro verticalmente e justificar o conteúdo à direita. */
 .flex-center-right {
@@ -473,8 +473,88 @@ Conjunto de regras globais que são aplicadas a todos os elementos (\*) e a elem
 
 5. `body`: Define estilos para o corpo do documento.
 
-- `background-color: var(--bg-black);`: Define a cor de fundo do corpo como a variável CSS `--bg-page`.
+- `background-color: var(--bg-page);`: Define a cor de fundo do corpo como a variável CSS `--bg-page`.
 - `font-size: 1.6rem;`: Define o tamanho da fonte como 1.6 rem.
 - `webkit-font-smoothing: antialiased;`: Aplica antialiasing para melhorar a qualidade da exibição de fontes em navegadores WebKit.
 
 > Trabalhei em projetos que não possuiam documentação, e pude aplicar um pouco do meu conhecimento em padronização, sempre me deparava com `tags` que possuiam mais de um estilo, quando não era estilo padrao do html, pegava o estilo de qualquer outro framework que tivesse vinculo com o projeto, por ser monolítico, possuia integração com varias ferramentas, e tentar manipular isso era bastante danoso.
+
+## Customização do cabeçalho
+
+![Cabeçalho da página](./prints/cabecalho.png)
+
+### HTML
+
+```html
+<header>
+  <div class="container">
+    <!--botões de navegação social-->
+    <div class="group-social flex-center-right">
+      <ul class="flex-items-center">
+        <li>
+          <a href="https://www.youtube.com/@neres_" target="_blank">
+            <img class="icon-social" src="./assets/images/youtub.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/fabioneresdejesus/"
+            target="_blank"
+          >
+            <img
+              class="icon-social"
+              src="./assets/images/linkedin.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/neresfabio" target="_blank">
+            <img class="icon-social" src="./assets/images/github.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+      <button class="bt-conversa" type="button">Converse comigo</button>
+    </div>
+    <div class="divider"></div>
+    <!--logo-->
+    <img class="logo" src="./assets/images/logo.svg" alt="" />
+  </div>
+</header>
+```
+
+### css
+
+```css
+/* HEADER */
+.group-social {
+  padding: 8px 0;
+}
+.icon-social {
+  width: 22px;
+}
+.flex-items-center li {
+  margin-right: 10px;
+}
+button {
+  border: none;
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  color: var(--font-primary-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+button:hover {
+  background-color: #18d107;
+}
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--bg-white);
+  margin-bottom: 24px;
+}
+.logo {
+  margin-bottom: 24px;
+}
+```
